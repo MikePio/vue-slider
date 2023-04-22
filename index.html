@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="style.css">
   <title>Vue slider</title>
 </head>
-<!-- <body style="background-color: rgb(35, 35, 35); color: white;"> -->
 
 <div id="app">
 
@@ -35,8 +34,9 @@
             <img :src="images[counter]" alt="image">
           </div>
           
-          <div>
+          <div class="description-image">
             <h2>{{imgTitles[counter]}}</h2>
+            <p>{{descriptions[counter]}}</p>
           </div>
 
         </div>

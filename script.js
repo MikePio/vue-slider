@@ -31,6 +31,13 @@ createApp({
             'img/4.jpg',
             'img/5.jpg'
           ],
+          descriptions: [
+            "Un'alba sul lago. Questo sfondo cattura la bellezza mozzafiato di un lago appena svegliato dal sonno, con il sole che sorge dietro le montagne e riflette i suoi raggi dorati sulla superficie dell'acqua. Il cielo è di un blu tenue, con una leggera foschia che rende l'atmosfera leggermente misteriosa. Le nuvole sembrano pennellate di colore rosa e arancione, creando un'immagine mozzafiato.",
+            "Uno sfondo mozzafiato che cattura la bellezza serena di un lago alpino. Acque cristalline e limpide si estendono all'infinito, circondate dalle cime delle montagne e dal verde intenso della natura incontaminata. La luce del sole primaverile illumina il paesaggio, creando un'atmosfera calda e accogliente.",
+            "Questo sfondo ti trasporta su un pontile che finisce in un lago silenzioso e tranquillo. L'acqua è come uno specchio, riflettendo la bellezza del cielo sopra di esso. L'aria è fresca e vivificante, e la vista del paesaggio che si staglia all'orizzonte è semplicemente magnifica.",
+            "Uno sfondo mozzafiato che cattura la bellezza serena di un lago alpino. Acque cristalline e limpide si estendono all'infinito, circondate dalle cime delle montagne e dal verde intenso della natura incontaminata. La luce del sole primaverile illumina il paesaggio, creando un'atmosfera calda e accogliente.",
+            "Un lago incantato si apre davanti a te, circondato da alberi lussureggianti e montagne maestose. Il cielo è di un blu intenso, con nuvole bianche che fluttuano dolcemente in lontananza. L'acqua del lago è calma e placida, invitandoti a lasciarti andare e ad immergerti nella bellezza della natura."
+          ],
           counter : 0
         }
     }, 

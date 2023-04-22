@@ -58,9 +58,23 @@
 
 }
 
+.description-image h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-image p{
+  text-align: center;
+  font-size: small;
+  padding: 10px 0;
+}
+
 h2{
-  width: 200px;
-  margin: 20px 44%;
+  margin-top: 20px;
+  /* width: 200px; */
+  /* margin: 20px 44%; */
 }
 
 .slider .chevron-btn {
