@@ -48,7 +48,7 @@
           <!-- <img :src="images[index]" alt="img"> -->
 
           <!-- SOLUZIONE 2 MIGLIORE-->
-          <img @click="counter = index" :class="{'active-white-border' : counter == index}" :src="thumb" alt="img">
+          <img @mouseover="autoScroll = (index == counter) ? false : true" @mouseleave="autoScroll = (index == counter) ? true : false" @click="counter = index" :class="{'active-white-border' : counter == index}" :src="thumb" alt="img">
           <!-- COSì NON FUNZIONA -->
           <!-- <img @click="index = counter" :src="thumb" alt="img"> -->
 
