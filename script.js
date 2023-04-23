@@ -44,11 +44,37 @@ createApp({
     
     methods:{
       nextPrev(isNext){
+        // se isNext è true, incrementa il contatore delle immagini (counter) altrimenti, decrementa il contatore
         isNext ? this.counter++ : this.counter--;
+        // Stessa cosa
+        // if(isNext == true){
+        //   this.counter++;
+        // }
+        // else{
+        //   this.counter--;
+        // }
         
+        // controllo se il contatore delle immagini è uguale alla lunghezza dell'array images se sì, significa che abbiamo superato l'ultimo elemento e dobbiamo ripartire dal primo elemento
         if(this.counter == this.images.length) this.counter = 0;
+        
+        // controllo se il contatore delle immagini è inferiore a 0 se sì, significa che abbiamo superato il primo elemento e dobbiamo ripartire dall'ultimo elemento
         else if(this.counter < 0) this.counter = this.images.length - 1;
+      },
+      autoClick(){
+        //* SOLUZIONE 1 arrow function MIGLIORE
+        setInterval(() => {
+            this.nextPrev(true);
+          }, 3000)
+        // SOLUZIONE 2 senza arrow function
+          // setInterval(function() {
+          //   this.nextPrev(true);
+          // }.bind(this), 3000);        
       }
+    },
+
+    mounted(){
+      // quando la pagina è montata viene richiamata la funzione
+      this.autoClick()
     }
 
 }).mount('#app')
