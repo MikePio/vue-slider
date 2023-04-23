@@ -38,7 +38,8 @@ createApp({
             "Uno sfondo mozzafiato che cattura la bellezza serena di un lago alpino. Acque cristalline e limpide si estendono all'infinito, circondate dalle cime delle montagne e dal verde intenso della natura incontaminata. La luce del sole primaverile illumina il paesaggio, creando un'atmosfera calda e accogliente.",
             "Un lago incantato si apre davanti a te, circondato da alberi lussureggianti e montagne maestose. Il cielo è di un blu intenso, con nuvole bianche che fluttuano dolcemente in lontananza. L'acqua del lago è calma e placida, invitandoti a lasciarti andare e ad immergerti nella bellezza della natura."
           ],
-          counter : 0
+          counter : 0,
+          autoScroll: true
         }
     }, 
     
@@ -63,7 +64,11 @@ createApp({
       autoClick(){
         //* SOLUZIONE 1 arrow function MIGLIORE
         setInterval(() => {
-            this.nextPrev(true);
+          //* senza bloccare l'auto scroll
+          // this.nextPrev(true);
+          //* Con il blocco dell'auto scroll
+          // se l'autoScroll è true allora nextPrev(true)
+          if (this.autoScroll) this.nextPrev(true);
           }, 3000)
         // SOLUZIONE 2 senza arrow function
           // setInterval(function() {
