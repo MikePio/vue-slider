@@ -144,3 +144,37 @@ h2{
   background-color: rgb(255, 255, 255);
   /* background-color: rgb(255, 0, 0); */
 }
+
+.container-thumb{
+  margin: 0 20px;
+  border-radius: 5px;
+  
+}
+
+.thumb{
+  width: 90px;
+  height: 90px;
+  
+}
+
+.thumb img{
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  opacity: 0.5;
+  position: absolute;
+  /* facoltativo */
+  /* z-index: 1; */
+}
+
+.thumb .active-white-border{
+  border: 2px white solid;
+  opacity: 1;
+  /* migliore */
+  transform: scale(1.2);
+  /* stessa cosa */
+  /* scale: 1.2; */
+  position: relative;
+  z-index: 2;
+}

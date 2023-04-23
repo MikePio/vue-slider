@@ -38,8 +38,27 @@
             <h2>{{imgTitles[counter]}}</h2>
             <p>{{descriptions[counter]}}</p>
           </div>
-
+          
         </div>
+      </div>
+      
+      <div class="container-thumb">
+        <div v-for="(thumb, index) in images" class="thumb">
+          <!-- SOLUZIONE 1 -->
+          <!-- <img :src="images[index]" alt="img"> -->
+
+          <!-- SOLUZIONE 2 MIGLIORE-->
+          <img @click="counter = index" :class="{'active-white-border' : counter == index}" :src="thumb" alt="img">
+          <!-- COSì NON FUNZIONA -->
+          <!-- <img @click="index = counter" :src="thumb" alt="img"> -->
+
+          <!-- SOLUZIONE 3 MIGLIORE -->
+          <!-- <img :src="`${thumb}`" alt="img"> -->
+          
+          <!-- SOLUZIONE 4 -->
+          <!-- <img :src="`${images[index]}`" alt="img"> -->
+        </div>
+        
       </div>
 
     </div>
